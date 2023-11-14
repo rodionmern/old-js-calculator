@@ -1,48 +1,62 @@
-// I'm set variable names
+let firstNumber, secondNumber, solutionOut, symbolSign;
 
-var firstNumber, secondNumber, outSolution, symbolMath;
+function solveCase() {
 
-outSolution = document.getElementById("solution").value;
+	// ~------~ setting variable names ~------~
 
-// Const which help me calculate answer
+	firstNumber = document.getElementById("first_number").value;
+	secondNumber = document.getElementById("second_number").value;
 
-const solve = () => {
+	symbolSign = prompt("Введите символ с помощью которого будет решаться пример (+: сложение, -: вычитание, *: умножение, /: деление)")
 
-    firstNumber = document.getElementById("first_number").value
-    secondNumber = document.getElementById("second_number").value;
-    outSolution = document.getElementById("solution").value;
+	// ~------~ convert string in int type ~------~
 
-    // Convert my variables to int
+	firstNumber = parseInt(firstNumber);
+	secondNumber = parseInt(secondNumber);
 
-    firstNumber = parseInt(firstNumber);
-    secondNumber = parseInt(secondNumber);
+	// ~------~ if/else block ~------~
 
-    // I'm asking a question: "Which sign?"
+	if (symbolSign == "+") {
 
-    symbolMath = prompt("Введите символ(+, -, *, **, /)");
+		// ~------~ shenanigans with solutionOut ~------~
 
-    // I find out what the sign is
+		solutionOut = parseInt(firstNumber) + parseInt(secondNumber);
 
-    if (symbolMath == "+") {
-        solution = firstNumber + secondNumber;
-    }
-    else if (symbolMath == "-") {
-        solution = firstNumber - secondNumber;
-    }
-    else if (symbolMath == "*") {
-        solution = firstNumber * secondNumber;
-    }
-    else if (symbolMath == "**") {
-        solution = firstNumber ** secondNumber;
-    }
-    else if (symbolMath == "/") {
-        solution = firstNumber / secondNumber;
-    }
+		solutionOut = "Ответ: " + solutionOut;
 
-    solution = "Ответ: " + solution;
+		console.log(firstNumber, secondNumber, solutionOut, symbolSign)
 
-    // Conclude answer in HTML class
+	} else if (symbolSign == "-") {
 
-    outSolution = document.getElementById("solution").innerHTML = solution;
+		// ~------~ shenanigans with solutionOut ~------~
+
+		solutionOut = parseInt(firstNumber) - parseInt(secondNumber);
+
+		solutionOut = "Ответ: " + solutionOut;
+		
+		console.log(firstNumber, secondNumber, solutionOut, symbolSign)
+	} else if (symbolSign == "*") {
+
+		// ~------~ shenanigans with solutionOut ~------~
+
+		solutionOut = parseInt(firstNumber) * parseInt(secondNumber);
+
+		solutionOut = "Ответ: " + solutionOut;
+
+		console.log(firstNumber, secondNumber, solutionOut, symbolSign)
+		
+	} else if (symbolSign == "/") {
+
+		// ~------~ shenanigans with solutionOut ~------~
+
+		solutionOut = parseInt(firstNumber) / parseInt(secondNumber);
+
+		solutionOut = "Ответ: " + solutionOut;
+
+		console.log(firstNumber, secondNumber, solutionOut, symbolSign)
+		
+	} 
+
+	solutionOut = document.getElementById("solution").innerHTML = solutionOut;
 
 }
