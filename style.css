@@ -6,9 +6,6 @@
 
 body {
 
-    height: 100dvh;
-    width: 100dvw;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +16,33 @@ body {
 
 }
 
-#num {
+#first_number {
+
+    border: none;
+
+    border-radius: 10px;
+
+    width: 250px;
+    height: 50px;
+    
+    background-color: grey;
+    color: white;
+
+    transition: all 1s;
+
+}
+
+#first_number:hover {
+
+    border-radius: 2px;
+
+    background-color: dimgray;
+
+    transition: all 1s;
+
+}
+
+#second_number {
 
     border: none;
 
@@ -31,22 +54,40 @@ body {
     background-color: grey;
     color: white;
     
-    margin: 10px;
+    transition: all 1s;
+
+}
+
+#second_number:hover {
+
+    border-radius: 2px;
+
+    background-color: dimgray;
+
+    transition: all 1s;
+
+}
+
+#solution {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+
+    border-radius: 5px;
+
+    width: 250px;
+    height: 50px;
+    
+    background-color: #ffb300;
+    color: white;
     
     transition: all 1s;
 
 }
 
-#num:hover {
-
-    border-radius: 2px;
-
-    background-color: dimgray;
-    color: floralwhite;
-
-    transition: all 1s;
-
-}
 
 #solve {
 
@@ -60,8 +101,6 @@ body {
     background-color:green;
     color: white;
     
-    margin: 10px;
-    
     transition: all 1s;
 
 }
@@ -71,7 +110,6 @@ body {
     border-radius: 2px;
 
     background-color: darkgreen;
-    color: floralwhite;
 
     transition: all 2s;
 

@@ -1,52 +1,48 @@
-const FirstNum = document.getElementById("first_number");
-const SecondNum = document.getElementById("second_number");
-const Solution = document.getElementById("solution");
+// I'm set variable names
 
-const first = () => {
+var firstNumber, secondNumber, outSolution, symbolMath;
 
-    first_number = +prompt("Введите число");
+outSolution = document.getElementById("solution").value;
 
-    localStorage.setItem('first__num', first_number);   
-
-}
-
-const second = () => {
-
-    second_number = +prompt("Введите число");
-
-    localStorage.setItem('second__num', second_number);
-
-}
+// Const which help me calculate answer
 
 const solve = () => {
 
-    let symbol__num = prompt("Что будешь делать? (+, -, /, *, **)");
+    firstNumber = document.getElementById("first_number").value
+    secondNumber = document.getElementById("second_number").value;
+    outSolution = document.getElementById("solution").value;
 
-    if (symbol__num == "+") {
-        let solution = localStorage.setItem('solve__numbers', first_number + second_number);
-    } 
-    else if (symbol__num == "-") {
-        let solution = localStorage.setItem('solve__numbers', first_number - second_number);
-    } 
-    else if (symbol__num == "*") {
-        let solution = localStorage.setItem('solve__numbers', first_number * second_number);
-    } 
-    else if (symbol__num == "**") {
-        let solution = localStorage.setItem('solve__numbers', first_number ** second_number);
-    } 
-    else if (symbol__num == "/") {
-        let solution = localStorage.setItem('solve__numbers', first_number / second_number);
-    } 
-    else if (symbol__num == "%") {
-        let solution = localStorage.setItem('solve__numbers', first_number ** second_number);
-    } 
-    else {
-        alert("Вы ввели неверное значения!")
+    // Convert my variables to int
+
+    firstNumber = parseInt(firstNumber);
+    secondNumber = parseInt(secondNumber);
+
+    // I'm asking a question: "Which sign?"
+
+    symbolMath = prompt("Введите символ(+, -, *, **, /)");
+
+    // I find out what the sign is
+
+    if (symbolMath == "+") {
+        solution = firstNumber + secondNumber;
+    }
+    else if (symbolMath == "-") {
+        solution = firstNumber - secondNumber;
+    }
+    else if (symbolMath == "*") {
+        solution = firstNumber * secondNumber;
+    }
+    else if (symbolMath == "**") {
+        solution = firstNumber ** secondNumber;
+    }
+    else if (symbolMath == "/") {
+        solution = firstNumber / secondNumber;
     }
 
-    // console.log("Сложение - ", first_number, " и ", second_number, " равно ", localStorage.getItem('solve__numbers'));
+    solution = "Ответ: " + solution;
 
-    alert(localStorage.getItem('solve__numbers'));
+    // Conclude answer in HTML class
 
-    console.log("Alert успешно выведен.")
+    outSolution = document.getElementById("solution").innerHTML = solution;
+
 }

@@ -9,16 +9,19 @@
     <title>Ralculator</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
 
 </head>
 
 <body>
 
-    <div class="btn__fnum"><button class="first_num" id="num" onclick="first()">Первое число</button></div>
-    <div class="btn__snum"><button class="second_num" id="num" onclick="second()">Второе число</button></div>
-    <div class="btn__solve"><button id="solve" onclick="solve()">Решение</button></div>
-    
+	<div class="box">
+		<p><input type="text" id="first_number" value="0"></p>
+	    <p><input type="text" id="second_number" value="0"></p>
+	    <div class="btn__solve"><button id="solve" onclick="solve()">Решение</button></div>
+	    <p class="first_num" id="solution">Ответ</p>
+	</div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
