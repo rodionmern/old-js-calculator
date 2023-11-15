@@ -1,14 +1,10 @@
-* {
-
-    font-size: 18px;
-
-}
-
 body {
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    text-align: center;
 
     flex-direction: column;
 
@@ -16,7 +12,7 @@ body {
 
 }
 
-#first_number {
+.input {
 
     border: none;
 
@@ -32,7 +28,7 @@ body {
 
 }
 
-#first_number:hover {
+.input:hover {
 
     border-radius: 2px;
 
@@ -42,7 +38,7 @@ body {
 
 }
 
-#second_number {
+#symbols {
 
     border: none;
 
@@ -51,18 +47,18 @@ body {
     width: 250px;
     height: 50px;
     
-    background-color: grey;
+    background-color: silver;
     color: white;
-    
+
     transition: all 1s;
 
 }
 
-#second_number:hover {
+#symbols:hover {
 
     border-radius: 2px;
 
-    background-color: dimgray;
+    background-color: gray;
 
     transition: all 1s;
 
@@ -88,8 +84,11 @@ body {
 
 }
 
-
 #solve {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     border: none;
 
@@ -117,10 +116,6 @@ body {
 
 .footer__text {
     
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
     text-align: center;
     
     position: absolute;
@@ -132,8 +127,4 @@ body {
     width: 100%;
     height: 10px;
 
-}
-
-a {
-    color: blue;
 }

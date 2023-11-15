@@ -6,8 +6,7 @@ function solveCase() {
 
 	firstNumber = document.getElementById("first_number").value;
 	secondNumber = document.getElementById("second_number").value;
-
-	symbolSign = prompt("Введите символ с помощью которого будет решаться пример (+: сложение, -: вычитание, *: умножение, /: деление)")
+	symbolSign = document.getElementById("symbols").value;
 
 	// ~------~ convert string in int type ~------~
 
@@ -16,7 +15,9 @@ function solveCase() {
 
 	// ~------~ if/else block ~------~
 
-	if (symbolSign == "+") {
+	console.log(symbolSign)
+
+	if (symbolSign == "plus") {
 
 		// ~------~ shenanigans with solutionOut ~------~
 
@@ -26,7 +27,7 @@ function solveCase() {
 
 		console.log(firstNumber, secondNumber, solutionOut, symbolSign)
 
-	} else if (symbolSign == "-") {
+	} else if (symbolSign == "minus") {
 
 		// ~------~ shenanigans with solutionOut ~------~
 
@@ -35,7 +36,7 @@ function solveCase() {
 		solutionOut = "Ответ: " + solutionOut;
 		
 		console.log(firstNumber, secondNumber, solutionOut, symbolSign)
-	} else if (symbolSign == "*") {
+	} else if (symbolSign == "multiply") {
 
 		// ~------~ shenanigans with solutionOut ~------~
 
@@ -45,7 +46,7 @@ function solveCase() {
 
 		console.log(firstNumber, secondNumber, solutionOut, symbolSign)
 		
-	} else if (symbolSign == "/") {
+	} else if (symbolSign == "divide") {
 
 		// ~------~ shenanigans with solutionOut ~------~
 
@@ -55,7 +56,9 @@ function solveCase() {
 
 		console.log(firstNumber, secondNumber, solutionOut, symbolSign)
 		
-	} 
+	}
+
+	// ~------~ output answer in html id="solution" ~------~
 
 	solutionOut = document.getElementById("solution").innerHTML = solutionOut;
 

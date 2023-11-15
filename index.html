@@ -15,14 +15,30 @@
 <body>
 
 	<div class="box">
-		<p><input type="text" id="first_number" value="0"></p>
-	    <p><input type="text" id="second_number" value="0"></p>
-	    <div class="btn__solve"><button id="solve" onclick="solveCase()">Решение</button></div>
-	    <p class="first_num" id="solution">Ответ</p>
+
+		<p><input type="text" class="input" id="first_number" value="0"></p>
+	    <p><input type="text" class="input" id="second_number" value="0"></p>
+
+	    <select id="symbols" name="symbol">
+		    <option value="plus">+</option>
+			<option value="minus">-</option>
+			<option value="multiply">×</option>
+			<option value="divide">/</option>
+		</select>
+
+		<div class="solve">
+			
+			<p id="solve" onclick="solveCase()">Решение</p>
+	    	<p class="first_num" id="solution">Ответ</p>
+
+		</div>
+
 	</div>
 
 	<div class="footer">
-		<p class="footer__text">Developed(created) by Rosburff<a href="https://github.com/rodionmern">(Rodion Mern)</a>, open-source in GitHub
+
+		<p class="footer__text">Developed by Rosburff and open-source in Github</p>
+
 	</div>
 
     <script src="main.js"></script>
