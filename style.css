@@ -114,3 +114,26 @@ body {
     transition: all 2s;
 
 }
+
+.footer__text {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    
+    position: absolute;
+    
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    width: 100%;
+    height: 10px;
+
+}
+
+a {
+    color: blue;
+}
