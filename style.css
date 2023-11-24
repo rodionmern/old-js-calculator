@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+
 body {
 
     display: flex;
@@ -8,7 +10,9 @@ body {
 
     flex-direction: column;
 
-    background-color: cornsilk;
+    background-color: #222222;
+
+    font-family: 'Fira Sans Condensed', sans-serif;
 
 }
 
@@ -21,8 +25,10 @@ body {
     width: 250px;
     height: 50px;
     
-    background-color: grey;
-    color: white;
+    background-color: transparent;
+    color: #fff;
+
+    border: solid 2px cornsilk;
 
     transition: all 1s;
 
@@ -32,7 +38,7 @@ body {
 
     border-radius: 2px;
 
-    background-color: dimgray;
+    background-color: #ffffff50;
 
     transition: all 1s;
 
@@ -47,8 +53,10 @@ body {
     width: 250px;
     height: 50px;
     
-    background-color: silver;
+    background-color: transparent;
     color: white;
+
+    border: solid 2px silver;
 
     transition: all 1s;
 
@@ -58,7 +66,7 @@ body {
 
     border-radius: 2px;
 
-    background-color: gray;
+    background-color: #C0C0C050;
 
     transition: all 1s;
 
@@ -77,8 +85,20 @@ body {
     width: 250px;
     height: 50px;
     
-    background-color: #ffb300;
+    background-color: transparent;
     color: white;
+
+    border: solid 2px #ffb300;
+    
+    transition: all 1s;
+
+}
+
+#solution:hover {
+
+    border-radius: 2px;
+    
+    background-color: #ffb30050;
     
     transition: all 1s;
 
@@ -97,8 +117,10 @@ body {
     width: 250px;
     height: 50px;
     
-    background-color:green;
+    background-color: transparent;
     color: white;
+
+    border: solid 2px green;
     
     transition: all 1s;
 
@@ -108,7 +130,7 @@ body {
 
     border-radius: 2px;
 
-    background-color: darkgreen;
+    background-color: #00640050;
 
     transition: all 2s;
 
@@ -126,5 +148,7 @@ body {
     
     width: 100%;
     height: 10px;
+
+    color: white;
 
 }
