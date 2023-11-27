@@ -28,7 +28,7 @@ body {
     background-color: transparent;
     color: #fff;
 
-    border: solid 2px cornsilk;
+    border: solid 2px CORNSILK;
 
     transition: all 1s;
 
@@ -56,7 +56,7 @@ body {
     background-color: transparent;
     color: white;
 
-    border: solid 2px silver;
+    border: solid 2px SILVER;
 
     transition: all 1s;
 
@@ -120,7 +120,7 @@ body {
     background-color: transparent;
     color: white;
 
-    border: solid 2px green;
+    border: solid 2px GREEN;
     
     transition: all 1s;
 
@@ -132,7 +132,30 @@ body {
 
     background-color: #00640050;
 
-    transition: all 2s;
+    transition: all 1s;
+
+}
+
+#copypaste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 25px;
+    color: #fff;
+    background-color: transparent;
+    border: solid 2px RED;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+#copypaste:hover {
+
+    border-radius: 2px;
+
+    background-color: #ff000050;
+
+    transition: all 1s;
 
 }
 

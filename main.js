@@ -1,4 +1,4 @@
-let firstNumber, secondNumber, solutionOut, symbolSign;
+let firstNumber, secondNumber, solutionOut, symbolSign, copypaste;
 
 function solveCase() {
 
@@ -22,6 +22,7 @@ function solveCase() {
 		// ~------~ shenanigans with solutionOut ~------~
 
 		solutionOut = parseInt(firstNumber) + parseInt(secondNumber);
+		solOut = solutionOut;
 
 		solutionOut = "Ответ: " + solutionOut;
 
@@ -32,6 +33,7 @@ function solveCase() {
 		// ~------~ shenanigans with solutionOut ~------~
 
 		solutionOut = parseInt(firstNumber) - parseInt(secondNumber);
+		solOut = solutionOut;
 
 		solutionOut = "Ответ: " + solutionOut;
 		
@@ -41,6 +43,7 @@ function solveCase() {
 		// ~------~ shenanigans with solutionOut ~------~
 
 		solutionOut = parseInt(firstNumber) * parseInt(secondNumber);
+		solOut = solutionOut;
 
 		solutionOut = "Ответ: " + solutionOut;
 
@@ -51,6 +54,7 @@ function solveCase() {
 		// ~------~ shenanigans with solutionOut ~------~
 
 		solutionOut = parseInt(firstNumber) / parseInt(secondNumber);
+		solOut = solutionOut;
 
 		solutionOut = "Ответ: " + solutionOut;
 
@@ -62,4 +66,10 @@ function solveCase() {
 
 	solutionOut = document.getElementById("solution").innerHTML = solutionOut;
 
+}
+
+function copyPaste() {
+	navigator.clipboard.writeText(solOut);
+
+	console.log("Текст скопирован в буфер обмена");
 }
