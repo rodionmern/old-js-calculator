@@ -88,7 +88,7 @@ body {
     background-color: transparent;
     color: white;
 
-    border: solid 2px #ffb300;
+    border: solid 2px SILVER;
     
     transition: all 1s;
 
@@ -98,7 +98,7 @@ body {
 
     border-radius: 2px;
     
-    background-color: #ffb30050;
+    background-color: #C0C0C050;
     
     transition: all 1s;
 
@@ -120,7 +120,7 @@ body {
     background-color: transparent;
     color: white;
 
-    border: solid 2px GREEN;
+    border: solid 2px SILVER;
     
     transition: all 1s;
 
@@ -130,7 +130,7 @@ body {
 
     border-radius: 2px;
 
-    background-color: #00640050;
+    background-color: #C0C0C050;
 
     transition: all 1s;
 
@@ -144,7 +144,7 @@ body {
     height: 25px;
     color: #fff;
     background-color: transparent;
-    border: solid 2px RED;
+    border: solid 2px SILVER;
     border-radius: 5px;
     transition: all 1s;
 }
@@ -153,7 +153,7 @@ body {
 
     border-radius: 2px;
 
-    background-color: #ff000050;
+    background-color: #C0C0C050;
 
     transition: all 1s;
 
