@@ -1,177 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
 
 body {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-
-    flex-direction: column;
-
-    background-color: #222222;
-
-    font-family: 'Fira Sans Condensed', sans-serif;
-
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	background-color: #111111;
+	font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .input {
-
-    border: none;
-
-    border-radius: 10px;
-
-    width: 250px;
-    height: 50px;
-    
-    background-color: transparent;
-    color: #fff;
-
-    border: solid 2px CORNSILK;
-
-    transition: all 1s;
-
+	border: none;
+	border-radius: 10px;
+	width: 250px;
+	height: 50px;
+	background-color: #282828;
+	color: #fff;
+	// border: solid 2px CORNSILK;
+	transition: all 1s;
 }
 
 .input:hover {
-
-    border-radius: 2px;
-
-    background-color: #ffffff50;
-
-    transition: all 1s;
-
+	border-radius: 2px;
+	background-color: #ffffff50;
+	transition: all 1s;
 }
 
 #symbols {
-
-    border: none;
-
-    border-radius: 10px;
-
-    width: 250px;
-    height: 50px;
-    
-    background-color: transparent;
-    color: white;
-
-    border: solid 2px SILVER;
-
-    transition: all 1s;
-
+	border: none;
+	border-radius: 10px;
+	width: 250px;
+	height: 50px;
+	background-color: #222222;
+	color: white;
+	// border: solid 2px SILVER;
+	transition: all 1s;
 }
 
 #symbols:hover {
-
-    border-radius: 2px;
-
-    background-color: #C0C0C050;
-
-    transition: all 1s;
-
+	border-radius: 2px;
+	background-color: #C0C0C050;
+	transition: all 1s;
 }
 
 #solution {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border: none;
-
-    border-radius: 5px;
-
-    width: 250px;
-    height: 50px;
-    
-    background-color: transparent;
-    color: white;
-
-    border: solid 2px SILVER;
-    
-    transition: all 1s;
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border-radius: 5px;
+	width: 250px;
+	height: 50px;
+	background-color: #202020;
+	color: white;
+	// border: solid 2px SILVER;
+	transition: all 1s;
 }
 
 #solution:hover {
-
-    border-radius: 2px;
-    
-    background-color: #C0C0C050;
-    
-    transition: all 1s;
-
+	border-radius: 2px;
+	background-color: #C0C0C050;
+	transition: all 1s;
 }
 
 #solve {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border: none;
-
-    border-radius: 5px;
-
-    width: 250px;
-    height: 50px;
-    
-    background-color: transparent;
-    color: white;
-
-    border: solid 2px SILVER;
-    
-    transition: all 1s;
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border-radius: 5px;
+	width: 250px;
+	height: 50px;
+	background-color: #222222;
+	color: white;
+	transition: all 1s;
 }
 
 #solve:hover {
-
-    border-radius: 2px;
-
-    background-color: #C0C0C050;
-
-    transition: all 1s;
-
+	border-radius: 2px;
+	background-color: #C0C0C050;
+	transition: all 1s;
 }
 
 #copypaste {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 25px;
-    color: #fff;
-    background-color: transparent;
-    border: solid 2px SILVER;
-    border-radius: 5px;
-    transition: all 1s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	height: 25px;
+	color: #fff;
+	background-color: #222222;
+	// border: solid 2px SILVER;
+	border-radius: 5px;
+	transition: all 1s;
 }
 
 #copypaste:hover {
-
-    border-radius: 2px;
-
-    background-color: #C0C0C050;
-
-    transition: all 1s;
-
+	border-radius: 2px;
+	background-color: #C0C0C050;
+	transition: all 1s;
 }
 
 .footer__text {
-    
-    text-align: center;
-    
-    position: absolute;
-    
-    left: 0;
-    right: 0;
-    bottom: 0;
-    
-    width: 100%;
-    height: 10px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 10px;
+	color: white;
+}
 
-    color: white;
-
+a {
+	color: #989898;
+	text-decoration: none;
 }

@@ -1,4 +1,4 @@
-let firstNumber, secondNumber, solutionOut, symbolSign, copypaste;
+let firstNumber, secondNumber, outSolution, symbolSign, copypaste;
 
 function solveCase() {
 
@@ -21,50 +21,45 @@ function solveCase() {
 
 		// ~------~ shenanigans with solutionOut ~------~
 
-		solutionOut = parseInt(firstNumber) + parseInt(secondNumber);
-		solOut = solutionOut;
+		outSolution = parseInt(firstNumber) + parseInt(secondNumber);
+		solOut = outSolution;
 
-		solutionOut = "Ответ: " + solutionOut;
-
-		console.log(firstNumber, secondNumber, solutionOut, symbolSign)
+		outSolution = "Ответ: " + outSolution;
 
 	} else if (symbolSign == "minus") {
 
 		// ~------~ shenanigans with solutionOut ~------~
 
-		solutionOut = parseInt(firstNumber) - parseInt(secondNumber);
-		solOut = solutionOut;
+		outSolution = parseInt(firstNumber) - parseInt(secondNumber);
+		solOut = outSolution;
 
-		solutionOut = "Ответ: " + solutionOut;
-		
-		console.log(firstNumber, secondNumber, solutionOut, symbolSign)
+		outSolution = "Ответ: " + outSolution;
+	
 	} else if (symbolSign == "multiply") {
 
 		// ~------~ shenanigans with solutionOut ~------~
 
-		solutionOut = parseInt(firstNumber) * parseInt(secondNumber);
-		solOut = solutionOut;
+		outSolution = parseInt(firstNumber) * parseInt(secondNumber);
+		solOut = outSolution
 
-		solutionOut = "Ответ: " + solutionOut;
-
-		console.log(firstNumber, secondNumber, solutionOut, symbolSign)
+		outSolution = "Ответ: " + outSolution;
 		
 	} else if (symbolSign == "divide") {
 
 		// ~------~ shenanigans with solutionOut ~------~
 
-		solutionOut = parseInt(firstNumber) / parseInt(secondNumber);
-		solOut = solutionOut;
+		outSolution = parseInt(firstNumber) / parseInt(secondNumber);
+		solOut = outSolution;
 
-		solutionOut = "Ответ: " + solutionOut;
-
-		console.log(firstNumber, secondNumber, solutionOut, symbolSign)
+		outSolution = "Ответ: " + outSolution;
 		
 	}
 
 	// ~------~ output answer in html id="solution" ~------~
 
-	solutionOut = document.getElementById("solution").innerHTML = solutionOut;
+	console.log(firstNumber, secondNumber, outSolution, symbolSign)
+
+	outSolution = document.getElementById("solution").innerHTML = outSolution;
 
 }
 
